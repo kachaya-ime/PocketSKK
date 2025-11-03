@@ -8,7 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="keyword_bg">#FFCCCCFF</color>
-    <color name="select_bg">#FFFFCCCC</color>
+    <color name="keyword_bg">#80CCCCFF</color>
+    <color name="select_bg">#80FFCCCC</color>
 
 </resources>

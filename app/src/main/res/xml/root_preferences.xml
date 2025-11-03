@@ -1,45 +1,55 @@
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+<PreferenceScreen
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <PreferenceCategory app:title="入力設定">
+
+    <PreferenceCategory
+        app:title="入力設定">
+
         <SwitchPreferenceCompat
             app:defaultValue="true"
             app:key="start_kana"
-            app:title="かな入力で開始する" />
+            app:title="かな入力で開始する"
+            />
         <SwitchPreferenceCompat
             app:defaultValue="false"
             app:key="click_commit"
-            app:title="候補クリックで確定する" />
+            app:title="候補クリックで確定する"
+            />
+
     </PreferenceCategory>
 
     <PreferenceCategory app:title="表示設定">
         <SwitchPreferenceCompat
             app:defaultValue="true"
             app:key="show_marker"
-            app:title="▽▼マークを表示する" />
+            app:title="▽▼マークを表示する"
+            />
     </PreferenceCategory>
 
-    <PreferenceCategory android:title="ローマ字設定">
+    <PreferenceCategory app:title="ローマ字設定">
         <ListPreference
-            android:defaultValue="、"
-            android:entries="@array/kuten_entries"
-            android:entryValues="@array/kuten_values"
-            android:key="kuten"
-            android:title="句点"
-            app:useSimpleSummaryProvider="true" />
+            app:defaultValue="、"
+            app:entries="@array/kuten_entries"
+            app:entryValues="@array/kuten_values"
+            app:key="kuten"
+            app:title="句点"
+            app:useSimpleSummaryProvider="true"
+            />
         <ListPreference
-            android:defaultValue="。"
-            android:entries="@array/touten_entries"
-            android:entryValues="@array/touten_values"
-            android:key="touten"
-            android:title="読点"
-            app:useSimpleSummaryProvider="true" />
+            app:defaultValue="。"
+            app:entries="@array/touten_entries"
+            app:entryValues="@array/touten_values"
+            app:key="touten"
+            app:title="読点"
+            app:useSimpleSummaryProvider="true"
+            />
         <ListPreference
-            android:defaultValue="\u0020"
-            android:entries="@array/space_entries"
-            android:entryValues="@array/space_values"
-            android:key="space"
-            android:title="スペース"
-            app:useSimpleSummaryProvider="true" />
+            app:defaultValue="\u0020"
+            app:entries="@array/space_entries"
+            app:entryValues="@array/space_values"
+            app:key="space"
+            app:title="スペース"
+            app:useSimpleSummaryProvider="true"
+            />
     </PreferenceCategory>
 
 </PreferenceScreen>
